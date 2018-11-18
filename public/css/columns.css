@@ -1,0 +1,39 @@
+html, body {
+    margin:0;
+    height:100%;
+    width:100%;
+}
+
+.content-wrap {
+    height:100%;
+    position:relative;
+}
+
+.col {
+    height:100%;
+    width:50%;
+    display:inline-block;
+    margin:0;
+}
+.content {
+    position:relative;
+    height:100%;
+}
+
+.col.lefty .content:nth-child(odd) {
+    background:steelblue;
+}
+.col.lefty .content:nth-child(even) {
+    background:blue;
+}
+.col.righty .content:nth-child(odd) {
+    background:pink;
+}
+.col.righty .content:nth-child(even) {
+    background:red;
+}
+.col.righty {
+    position:fixed;
+    top:0;
+    right:0;
+}

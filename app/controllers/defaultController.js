@@ -1,25 +1,11 @@
 const User = require('../models/User');
+const path = require('path');
 
 module.exports = class DefaultController {
 	constructor(){}
 
 	async index(){
-		this.render({
-			title: 'Express Boilerplate Default',
-		});
+		this.res.sendFile( path.join(process.cwd(), '/pages/home.html'));
 	}
-
-	async getUsers(){
-		try {
-			let user = new User();
-			let allUsers = await user.findAll();
-			this.res.json(allUsers);
-		}catch(error){
-			this.res.json({
-				message: error.message
-			})
-		}
-	}
-
 
 }

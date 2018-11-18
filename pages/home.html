@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Hi I am César Rodríguez, web and mobile developer." />
+    <meta name="keywords" content="web developer, mobile developer, developer, web and mobile developer, desarrollador web, desarrollador movil, cesar rodriguez, chihuahua, desarrollador chihuahua, programador web, programador movil, programador chihuahua" />
+    <meta name="author" content="César Rodríguez" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="César Rguez - Web & mobile developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.crodriguez.com.mx" />
+    <meta property="og:description" content="Hi I am César Rodríguez, web and mobile developer." />
+    <meta property="og:site_name" content="César Rguez" />
+    <meta property="og:locale" content="es_MX" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="http://www.crodriguez.com.mx" />
+    <meta name="twitter:title" content="César Rguez" />
+    <meta name="twitter:description" content="Hi I am César Rodríguez, web and mobile developer." />
+    <meta property="og:image" content="/img/favicon.ico" />
+    <meta property="twitter:image" content="/img/favicon.ico" />
+    <title>César Rodríguez - Desarrollador web & móvil</title>
+    <link rel="stylesheet" href="css/split.css" />
+    <link rel="stylesheet" href="css/columns.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="split left">
+            <div class="main">
+                <h1>The person</h1>
+                <div class="button">
+                    <label>Read more</label>
+                    <span class="close">X</span>
+                    <iframe id="leftFrame" onload="scroll(0,0);" src="about:blank" style="opacity:0;width:100%;height:100%;"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="split right">
+            <div class="main">
+                <h1>The developer</h1>
+                <div class="button">
+                    <label>Read more</label>
+                    <span class="close">X</span>
+                    <iframe id="rightFrame" onload="scroll(0,0);" src="about:blank" style="opacity:0;width:100%;height:100%;"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/basic.js"></script>
+
+    <script id="leftTmpl" type="text/template">
+        <head>
+            <link rel="stylesheet" href="css/divided.css">
+        </head>
+        <body>
+        <article>
+            <figure>
+                <img src='img/me.JPG' alt />
+            </figure>
+            <section>
+                <div>
+                    <h2>César as a person</h2>
+                    <p>Hi, I am 27 years old and currently live in Chihuahua City trying to leave my mark on this world.</p>
+                </div>
+            </section>
+                
+            <figure>
+                    <img src='img/study.jpeg' alt />
+                </figure>
+                <section>
+                    <div>
+                        <h2>School</h2>
+                        <p>I graduated from the Faculty of Engineering of the UACH in December 2013, where I studied Software Engineering and I have also taken some courses such as "Introduction to Swift", "Reactive X + Android" and "AWS Solutions Architect".</p>
+                    </div>
+                </section>
+
+            <figure>
+                <img src='img/music.jpeg' alt />
+            </figure>
+            <section>
+                <div>
+                    <h2>Likes</h2>
+                    <p>
+                        I have an immeasurable taste for music of <a target="_blank" href="https://open.spotify.com/user/cesarrguez/playlist/7Mbb2fnoIhCdfeHBybEkE9?si=kahBsYs-R1-Z7kZcp_JWxg">all genres</a>  and although I am not a person who watches much television I can not miss such good series as Game Of Thrones, Rick & Morty, Breaking Bad, and others.
+                    </p>
+                </div>
+            </section>
+                
+            <figure>
+                <img src='img/pingpong.jpg' alt />
+            </figure>
+            <section>
+                <div>
+                    <h2>Hobbies</h2>
+                    <p>I have a love for table tennis and although I don't practice it as often as I would like, the day I do it I am quite competitive. I also like to walk and from time to time hit a sack of box.</p>
+                </div>
+            </section>
+                
+            <figure>
+                <img src='img/friends.jpeg' alt />
+            </figure>
+            <section>
+                <div>
+                    <h2>Friends</h2>
+                    <p>I am a very calm person and I prefer quality to quantity in my relationships. Intelligent people, beers and a good multi-themed talk I enjoy it too much.</p>
+                </div>
+            </section>
+                
+            <figure>
+                <img src='img/more.jpeg' alt />
+            </figure>
+            <section>
+                <div>
+                    <h2>What else?</h2>
+                    <p>You just read a little bit of me, there's a lot more to it than those short paragraphs.<br>
+                    You can find me at <a href="https://www.facebook.com/cesar.i.rdguez">Facebook</a> or <a href="https://www.linkedin.com/in/césar-iván-rodríguez-salgado-53b4198a">Lnkedin</a>
+                    </p>
+                </div>
+            </section>
+            
+        </article> 
+    </body>
+</script>
+
+    <script id="rightTmpl" type="text/template">
+        <head>
+        <link rel="stylesheet" href="css/divided.css">
+    </head>
+    <body>
+    <article>
+        <figure>
+            <img src='img/programmer.jpeg' alt />
+        </figure>
+        <section>
+            <div>
+                <h1>César the developer</h1>
+                <p>I have 6 years of professional experience as a programmer and I have worked on several projects. I am self-taught, motivated by what I do, a lover of programming and new technologies.</p>
+            </div>
+        </section>
+            
+        <figure>
+            <img src='img/blu.jpg' alt />
+        </figure>
+        <section>
+            <div>
+                <h2> <a href="http://blucapital.mx/">Blú</a> </h2>
+                <p>I'm currently working at Blú Corporate, where I focus on software development and financial solutions using NodeJS, PHP, PostgreSQL and Amazon Web Services.</p>
+            </div>
+        </section>
+            
+        <figure>
+            <img src='img/coffee.jpg' alt />
+        </figure>
+        <section>
+            <div>
+                <h2> <a href="http://xaandia.com/">Xaandia</a> </h2>
+                <p>I was part of the Xaandia team for 4 years where I dedicated myself to the creation of mobile applications for iOS and Android, web applications, web pages, between others using Perl, Java, Swift and MySQL.</p>
+            </div>
+        </section>
+            
+        <figure>
+            <img src='img/marketero.jpeg' alt />
+        </figure>
+        <section>
+            <div>
+                <h2> <a href="https://marketero.io/">Marketero Inc.</a></h2>
+                <p>I participated in the development of Marketero, a SaaS with 3 main modules: Landing Pages, CRM & Email Marketing. Mainly using Perl, MySQL and Amazon Web Services.</p>
+            </div>
+        </section>
+            
+        <figure>
+            <img src='img/freelance.jpg' alt />
+        </figure>
+        <section>
+            <div>
+                <h2>Freelance</h2>
+                <p>I have had the fortune to work with different people in the development of different web pages using HTML5, CSS3, jQuery and AWS.</p>
+            </div>
+        </section>
+            
+        <figure>
+            <img src='img/more2.jpeg' alt />
+        </figure>
+        <section>
+            <div>
+                <h2>What else?</h2>
+                <p>As a developer I like to learn, have challenges, transform problems into software solutions using new technologies, languages and tools. <br>You can find me at <a href="https://github.com/cesarrdzs">Github</a></p>
+            </div>  
+        </section>
+
+    </article> 
+</body>
+</script>
+
+
+</body>
+
+</html>
