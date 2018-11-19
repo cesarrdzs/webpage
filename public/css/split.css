@@ -203,6 +203,57 @@ iframe {
         height: 2rem;
     }
 
+    .split h1{
+        top: 8%;
+    }
+
+    .split.left, .split.right {
+        width: var(--full-width);
+        height: 50%
+    }
+
+    .split.left{
+        top: 0px;
+    }
+
+    .split.right{
+        bottom: 0px;
+    }
+
+    .hover-left .left {
+        height: var(--hover-width) !important;
+    }
+
+    .hover-left .right {
+        height: var(--other-width) !important;
+    }
+
+    .hover-right .right {
+        height: var(--hover-width) !important;
+    }
+
+    .hover-right .left {
+        height: var(--other-width) !important;
+    }
+
+    .full-left .left {
+        height: var(--full-width) !important;
+    }
+
+    .full-left .right {
+        width: 100% !important;
+        height: 0% !important;
+    }
+
+    .full-right .right {
+        height: var(--full-width) !important;
+    }
+
+    .full-right .left {
+        width: 100% !important;
+        height: 0% !important;
+    }
+
 }
 
 .button.clicked span.close {
